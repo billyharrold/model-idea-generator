@@ -1,0 +1,38 @@
+html {
+    background-color: #307eab;
+    font-size: 10px;
+    font-family: "Roboto", sans-serif;
+    
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    padding: 50px, 20px, 50px, 20px;
+    border: 20px, solid black;
+}
+
+h1 {
+    font-size: 60px;
+    font-style: italic;
+    margin: 0;
+    padding: 20px, 0;  
+    text-align: center;
+    
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+p,
+li {
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 1px;
+    
+
+}
