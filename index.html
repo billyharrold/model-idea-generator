@@ -2,7 +2,7 @@
 
 <html lang="en-US">
     <head>
-        <script async src="scripts\generator"></script>
+        <!--<script async src="scripts\generator"></script>-->
         <link rel="stylesheet" href="styles\style.css">
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
@@ -13,19 +13,19 @@
         rel="stylesheet">
     </head>
     <body>
-        <h1>Welcome to the Web Page</h1>
-        <img src="images\bungle.jpg" alt="Picture of awesome bear" />
-        <p>Instructions</p>
-        <ul>
-            <li>Bungle</li>
-            <li>Bungle so awesome</li>
-            <li>Bungle most awesome</li>
-        </ul>
+        <h1>Random 3D Modelling Idea generator</h1>
+        <p>Stuck for ideas? Press generate to get a model idea.</p>
+
+        <div>
+            <p class="randWord">READY</p>
+            <button onclick="generateWord()">Generate</button>
+        </div>
+        
+
+        <!---<img src="images\bungle.jpg" alt="Picture of awesome bear" /
         <p>for being awesome tips go to the <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Creating_the_content">Burger Website</a>
-             to find out more</p>
+             to find out more</p>-->
 
-
-
-
+        <script src="scripts/generator.js"></script>
     </body>
 </html>
