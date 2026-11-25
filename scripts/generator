@@ -1,9 +1,4 @@
-function sayHello(name) {
-  const greeting = `Hello, ${Name}!`;
-  return greeting;
-}
+const myHeading = document.querySelector("h1");
 
-const helloChris = sayHello("Chris");
-
-console.log(helloChris);
+myHeading.textContent = "Bungle's Page";
 
