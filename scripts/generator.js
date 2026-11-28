@@ -1,5 +1,13 @@
 
 console.log("Loaded script")
+const timerText = document.querySelector(".timer");
+
+// Timer Variables
+let endTime;
+const timeLength = 2 * 60;
+let timerID = null;
+let timeLeft = timeLength;
+
 
 const objects = [
   'Shoe', 
@@ -44,14 +52,46 @@ const objects = [
 function generateWord()
 {
   const newWord = document.querySelector(".randWord");
-  
   //newWord.textContent = objects; 
   
   let i = Math.floor(Math.random() * objects.length);
   let r = objects[i];
   newWord.textContent = r;
-
-
-  
+  startTimer();
 }
+
+function startTimer() 
+{
+  clearInterval(timerID);
+  endTime = Date.now() + timeLength * 1000;
+  
+  timerID = setInterval(tick, 1000);
+  showTime()
+}
+
+function tick()
+{
+  timeLeft = Math.round(endTime - Date.now()) / 1000;
+  
+  if (timeLeft <= 0)
+  {
+    clearInterval(timerID);
+    timerText.textContent = "Time UP!";
+  }
+  else
+  {
+    showTime();
+  }
+
+}
+
+function showTime()
+{
+  const minsLeft = Math.floor(timeLeft/60);
+  const secsLeft = Math.round(timeLeft % 60);
+  timerText.textContent = `${String(minsLeft)}:${String(secsLeft).padStart(2, "0")}`;
+
+}
+
+
 
