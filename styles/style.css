@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    width: 1200px;
+    width: 800px;
     margin: 0 auto;
     text-align: center;
     background-color: antiquewhite;
@@ -47,9 +47,17 @@ img {
     width: 400px;
     text-align: center;
     background-color: white;
+    border: 5px, solid black;
+}
+
+.timer {
+    gap: 20px;
+    font-size: 100px;
+    font-weight: bold;
+    width: 400px;
+    align-items: center;
+    background-color: whitesmoke;
     border: 10px, solid black;
-    
-    
 }
 
 p {
